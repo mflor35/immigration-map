@@ -1,0 +1,21 @@
+// Place all the styles related to the Tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+map
+{
+    margin:0;
+    padding:0;
+}
+.container
+{
+    position:relative;
+    width:100%;
+}
+.right
+{
+    position:absolute;
+    right:0px;
+    width:300px;
+    background-color:#b0e0e6;
+}

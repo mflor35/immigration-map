@@ -1,0 +1,33 @@
+<%= form_for(@tweet) do |f| %>
+  <% if @tweet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tweet.errors.count, "error") %> prohibited this tweet from being saved:</h2>
+
+      <ul>
+      <% @tweet.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_area :content %>
+  </div>
+  <div class="field">
+    <%= f.label :lattitude %><br>
+    <%= f.text_field :lattitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :polarity %><br>
+    <%= f.text_field :polarity %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
